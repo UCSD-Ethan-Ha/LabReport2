@@ -4,8 +4,9 @@ import java.net.URI;
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-    int word = 0;
+    int num = 0;
     int counter = 0;
+    int word = 0;
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
