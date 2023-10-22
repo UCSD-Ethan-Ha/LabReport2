@@ -31,6 +31,8 @@ class Handler implements URLHandler {
                     } 
                     
                     return output;
+                } else {
+                    return "Please enter s=(insert value here)";
                 }
             }
             return "404 Not Found!";
