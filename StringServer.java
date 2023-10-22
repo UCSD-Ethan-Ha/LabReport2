@@ -21,14 +21,16 @@ class Handler implements URLHandler {
                 // parameter[0] = s &  [1]= Hello
                 String[] parameters = url.getQuery().split("=");
                 if (parameters.length >= 2 && parameters[0].equals("s")) {
-                    //word += String.parseString(parameters[1]);
-                    //return Scounter, ".", parameters[1], "\n");
-                    sequence += 1;
+                    String output = "";
+                    int sequence = 1;
+
                     messages.add(parameters[1]);
                     for (int i = 0; i < messages.size(); i++){
-                        return 
+                        output += sequence + ". " + messages.get(i) + "\n";
+                        sequence++;
                     } 
-                    //return sequence + ". " + parameters[1] + "\n"; 
+                    
+                    return output;
                 }
             }
             return "404 Not Found!";
