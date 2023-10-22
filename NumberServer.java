@@ -1,11 +1,13 @@
 import java.io.IOException;
 import java.net.URI;
+import java.util.ArrayList;
 
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     int num = 0;
     int sequence = 0;
+    ArrayList messages = new ArrayList();
 
     public String handleRequest(URI url) {
         
@@ -22,7 +24,11 @@ class Handler implements URLHandler {
                     //word += String.parseString(parameters[1]);
                     //return Scounter, ".", parameters[1], "\n");
                     sequence += 1;
-                    return sequence + ". " + parameters[1] + "\n"; 
+                    messages.add(parameters[1]);
+                    for (int i = 0; i < messages.size(); i++){
+                        return 
+                    } 
+                    //return sequence + ". " + parameters[1] + "\n"; 
                 }
             }
             return "404 Not Found!";
