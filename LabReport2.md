@@ -81,7 +81,7 @@ Below is an image of me logging in without typing in the password thanks to the 
 
 ![Image](SSHKeylogin.jpg)
 
-Part 3
----
+Part 3  
+---  
 
 This lab and week, in general, helped me further develop my understanding of the command prompt commands and Java. I feel a lot more comfortable working in the lab and with the material now that I'm more familiar with the tools and techniques we've learned over the past few weeks. Overall, this week allowed me to practice the tools and techniques we've learned.
