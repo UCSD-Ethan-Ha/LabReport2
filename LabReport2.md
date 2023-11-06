@@ -57,6 +57,8 @@ class StringServer {
 }
 ```
 
+Below are two examples of add-message:
+
 ![Image](test1.jpg)
 
 - The methods called for the first test are my main method, StringServer, which will be followed up by the Handler method.
