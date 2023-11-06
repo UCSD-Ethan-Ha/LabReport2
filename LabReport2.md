@@ -3,12 +3,8 @@
 Part 1
 ---
 
-Here is the code for my StringServer File (includes the main class and URLHandler class):
+Here is the code for my StringServer File (includes the main class and URLHandler class but it excludes all the imports required so that it can fit all the code on one page:
 ```
-import java.io.IOException;
-import java.net.URI;
-import java.util.ArrayList;
-
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
