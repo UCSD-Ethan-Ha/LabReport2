@@ -26,7 +26,7 @@ class Handler implements URLHandler {
                     sequence += 1;
                     messages.add(parameters[1]);
                     for (int i = 0; i < messages.size(); i++){
-                        return 
+                        return "hello";
                     } 
                     //return sequence + ". " + parameters[1] + "\n"; 
                 }
