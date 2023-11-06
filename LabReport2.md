@@ -35,7 +35,6 @@ class Handler implements URLHandler {
                         output += sequence + ". " + messages.get(i) + "\n";
                         sequence++;
                     } 
-                    
                     return output;
                 } else {
                     return "Invalid format: Enter s=(insert value here)";
@@ -52,9 +51,7 @@ class StringServer {
             System.out.println("Missing port number! Try any number between 1024 to 49151");
             return;
         }
-
         int port = Integer.parseInt(args[0]);
-
         Server.start(port, new Handler());
     }
 }
