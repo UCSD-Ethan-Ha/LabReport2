@@ -2,9 +2,12 @@
 ---
 Part 1
 ---
-
-Here is the code for my StringServer File (includes the main class and URLHandler class but it excludes all the imports required so that it can fit all the code on one page:
+Here is the code for my StringServer File (includes the main class and URLHandler class but it can't all fit on one page so I apologize for the mess:
 ```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
